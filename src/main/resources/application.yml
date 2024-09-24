@@ -1,0 +1,23 @@
+server:
+  port: 9999 #端口号
+
+spring:
+  # Multipart 配置，用于文件上传
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 50MB
+
+  # 数据源配置
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/subdistrictoffice?useUnicode=true&characterEncoding=utf-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=GMT%2B8
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+# 配置 Mybatis-plus
+mybatis-plus:
+  type-aliases-package: com.edu.project.bean
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
