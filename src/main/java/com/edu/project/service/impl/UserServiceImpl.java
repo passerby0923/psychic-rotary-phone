@@ -45,7 +45,6 @@ public class UserServiceImpl extends
 		// 确保更新的员工对象使用正确的手机号
 		updatedUser.setUsername(username);
 		return update(updatedUser, queryWrapper); // 执行更新操作
-		// 可以继续设置其他字段
 	}
 
 	@Override

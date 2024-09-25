@@ -46,53 +46,48 @@ public class HouseController {
 	}
 
 	// 根据业主名字获取房屋
-	@GetMapping("/byname")
-	@ResponseBody
-	public ResponseEntity<Map<String, Object>> getHouseByOwnerName(@PathVariable String ownerName) {
+	@GetMapping("/byname/{ownerName}")
+	public ResponseEntity<House> getHouseByOwnerName(@PathVariable String ownerName) {
 		House house = houseService.findByName(ownerName);
-		Map<String, Object> response = new HashMap<>();
 		if (house != null) {
-			response.put("message", "查询成功");
-			response.put("house", house); // 将查询到的房屋信息返回
-			return ResponseEntity.ok(response);
+			return ResponseEntity.ok(house);
 		} else {
-			response.put("message", "未找到该房屋");
-			return ResponseEntity.status(HttpStatus.NOT_FOUND).body(response);
+			return ResponseEntity.status(HttpStatus.NOT_FOUND).body(null);
 		}
 	}
 
-	// 更新房屋信息
-//	@PostMapping("/updateById")
-//	@ResponseBody
-//	public ResponseEntity<Map<String, String>> updateHouse(@RequestParam Integer houseId, HttpServletRequest request) {
-//		House updatedHouse = HouseUtil.fromRequest(request);
-//		boolean isUpdated = houseService.updateById(houseId, updatedHouse);
-//		Map<String, String> response = new HashMap<>();
-//		if (isUpdated) {
-//			response.put("status", "success");
-//			response.put("message", "房屋更新成功");
-//			return ResponseEntity.ok(response);
-//		} else {
-//			response.put("status", "error");
-//			response.put("message", "房屋更新失败");
-//			return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(response);
-//		}
-//	}
+	// 根据业主名更新房屋信息
+	@PostMapping("/updateByOwnerName")
+	@ResponseBody
+	public ResponseEntity<Map<String, String>> updateHouse(@RequestParam String ownerName, HttpServletRequest request) {
+		House updatedHouse = HouseUtil.fromRequest(request);
+		boolean isUpdated = houseService.updateByOwnerName(ownerName, updatedHouse);
+		Map<String, String> response = new HashMap<>();
+		if (isUpdated) {
+			response.put("status", "success");
+			response.put("message", "房屋更新成功");
+			return ResponseEntity.ok(response);
+		} else {
+			response.put("status", "error");
+			response.put("message", "房屋更新失败");
+			return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(response);
+		}
+	}
 
-	// 删除房屋
-//	@PostMapping("/deleteById")
-//	@ResponseBody
-//	public ResponseEntity<Map<String, String>> deleteHouse(@RequestParam Integer houseId) {
-//		boolean isDelHouse = houseService.deleteById(houseId);
-//		Map<String, String> response = new HashMap<>();
-//		if (isDelHouse) {
-//			response.put("status", "success");
-//			response.put("message", "删除成功");
-//			return ResponseEntity.ok(response);
-//		} else {
-//			response.put("status", "error");
-//			response.put("message", "删除失败");
-//			return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(response);
-//		}
-//	}
+	// 根据业主名删除房屋
+	@PostMapping("/deleteByOwnerName")
+	@ResponseBody
+	public ResponseEntity<Map<String, String>> deleteHouse(@RequestParam String ownerName) {
+		boolean isDelHouse = houseService.deleteByOwnerName(ownerName);
+		Map<String, String> response = new HashMap<>();
+		if (isDelHouse) {
+			response.put("status", "success");
+			response.put("message", "删除成功");
+			return ResponseEntity.ok(response);
+		} else {
+			response.put("status", "error");
+			response.put("message", "删除失败");
+			return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(response);
+		}
+	}
 }
