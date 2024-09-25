@@ -4,12 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="052970e6-d4b8-4ab8-89df-91799de6f8a1" name="Changes" comment="首次创建">
+    <list default="true" id="052970e6-d4b8-4ab8-89df-91799de6f8a1" name="Changes" comment="vue create front">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/front/.browserslistrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/front/.eslintrc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/front/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/front/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/front/babel.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/front/jsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/front/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/front/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/front/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/front/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/front/src/App.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/front/src/assets/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/front/src/components/HelloWorld.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/front/src/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/front/src/router/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/front/src/store/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/front/src/views/AboutView.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/front/src/views/HomeView.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/front/vue.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/front/yarn.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/project/controller/HouseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/project/controller/HouseController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/project/service/HouseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/project/service/HouseService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/project/service/impl/HouseServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/project/service/impl/HouseServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/project/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/project/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/ddd.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +48,7 @@
         <option name="title" value="All" />
       </GitPushTagMode>
     </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -39,7 +57,7 @@
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="localRepository" value="D:\servlet\maven\soft\mvn-repository" />
-        <option name="mavenHome" value="D:/servlet/maven/apache-maven-3.9.8" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../../../servlet/maven/apache-maven-3.9.8" />
         <option name="useMavenConfig" value="true" />
         <option name="userSettingsFile" value="D:\servlet\maven\apache-maven-3.9.8\conf\settings.xml" />
       </MavenGeneralSettings>
@@ -139,6 +157,7 @@
       <workItem from="1727181012399" duration="6516000" />
       <workItem from="1727226350010" duration="10955000" />
       <workItem from="1727240457278" duration="6239000" />
+      <workItem from="1727266340315" duration="1231000" />
     </task>
     <task id="LOCAL-00001" summary="Changes">
       <created>1727173112613</created>
@@ -193,7 +212,8 @@
     </ignored-roots>
     <MESSAGE value="Changes" />
     <MESSAGE value="首次创建" />
-    <option name="LAST_COMMIT_MESSAGE" value="首次创建" />
+    <MESSAGE value="vue create front" />
+    <option name="LAST_COMMIT_MESSAGE" value="vue create front" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
