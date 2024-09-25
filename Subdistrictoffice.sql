@@ -27,11 +27,10 @@ CREATE TABLE resident (
 CREATE TABLE house (
     house_id INT PRIMARY KEY AUTO_INCREMENT,     -- 房屋ID，主键
     address VARCHAR(200) NOT NULL,               -- 房屋地址
-    owner_id INT,                                -- 业主（居民）ID，外键
+    owner_name VARCHAR(100),                     -- 业主名
     house_type VARCHAR(50),                      -- 房屋类型（如：住宅、商业）
     area DECIMAL(10, 2),                         -- 房屋面积
-    build_year INT,                              -- 建造年份
-    FOREIGN KEY (owner_id) REFERENCES resident(resident_id)
+    build_year INT                               -- 建造年份
 );
 
 -- 居民福利申请表：用于管理居民的福利申请
@@ -40,9 +39,9 @@ CREATE TABLE welfare_application (
     resident_id INT,                                -- 居民ID，外键
     welfare_type VARCHAR(100),                      -- 福利类型
     apply_date DATE NOT NULL,                       -- 申请日期
-    status VARCHAR(50) DEFAULT '申请中',            -- 申请状态（如：申请中，已批准，已拒绝）
+    status VARCHAR(50) DEFAULT '申请中',             -- 申请状态（如：申请中，已批准，已拒绝）
     comments TEXT,                                  -- 备注
-    file_path VARCHAR(255),                          -- 文件存储路径
+    file_path VARCHAR(255),                         -- 文件存储路径
     FOREIGN KEY (resident_id) REFERENCES resident(resident_id)  -- 关联居民表
 );
 
@@ -76,7 +75,6 @@ CREATE TABLE user (
     FOREIGN KEY (resident_id) REFERENCES resident(resident_id)  -- 关联居民表
 );
 
--- 插入管理员用户
 -- 插入管理员用户
 INSERT INTO user (username, password, role)
 VALUES ('admin_user', 'password123', 'admin');

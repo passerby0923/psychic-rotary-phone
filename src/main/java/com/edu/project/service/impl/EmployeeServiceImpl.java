@@ -24,13 +24,11 @@ public class EmployeeServiceImpl
 		// 使用 QueryWrapper 查找指定手机号的员工
 		QueryWrapper<Employee> queryWrapper = new QueryWrapper<>();
 		queryWrapper.eq("phone", phone); // 根据手机号查找员工
-
 		// 检查员工是否存在
 		if (getOne(queryWrapper) == null) {
 			// 如果没有找到员工，返回 false 或抛出异常
 			return false; // 或者可以选择抛出异常
 		}
-
 		// 确保更新的员工对象使用正确的手机号
 		employee.setPhone(phone);
 		return update(employee, queryWrapper); // 执行更新操作

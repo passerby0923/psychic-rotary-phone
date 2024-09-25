@@ -1,4 +1,4 @@
-package com.edu.project.util;
+package com.edu.project.util.beanutil;
 
 import com.edu.project.bean.Employee;
 

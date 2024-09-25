@@ -30,18 +30,14 @@ public class UserController {
 	public String registerUser(@RequestParam String username,
 	                           @RequestParam String password,
 	                           @RequestParam String role) {
-		// 检查用户名是否已存在
-		if (userService.findByUsername(username)!=null) {
+		if (userService.findByUsername(username) != null) {
 			return "用户已存在";
 		}
-		// 创建新用户
 		User newUser = new User();
 		newUser.setUsername(username);
-		// 使用 PasswordUtil 加密密码
-		newUser.setPassword(PasswordUtil.encryptPassword(password));
+		newUser.setPassword(password); // 存储明文密码
 		newUser.setRole(role);
 		newUser.setCreatedAt(new Timestamp(System.currentTimeMillis()));
-
 		userService.registerUser(newUser);
 		return "已添加";
 	}
@@ -58,14 +54,12 @@ public class UserController {
 		User user = userService.findByUsername(username);
 		if (user == null) {
 			model.addAttribute("error", "用户不存在");
-			return Result.fail("用户不存在"); // 返回登录页面
+			return Result.fail("用户不存在");
 		}
-		if (!PasswordUtil.verifyPassword(password, user.getPassword())) {
+		if (!password.equals(user.getPassword())) { // 直接比较明文密码
 			model.addAttribute("error", "密码错误");
-			return Result.fail("密码错误"); // 返回登录页面
+			return Result.fail("密码错误");
 		}
-		// 登录成功，返回用户角色和成功状态
 		return Result.success("登录成功", user.getRole());
 	}
-
 }

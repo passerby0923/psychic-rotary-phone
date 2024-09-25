@@ -10,4 +10,10 @@ public interface UserService extends IService<User> {
 	User findByUsername(String username);
 
 	void registerUser(User newUser);
+
+	boolean updateUserByUsername(String username, User updatedUser);
+
+	boolean deleteUseByUsername(String username);
+
+
 }
