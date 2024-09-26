@@ -15,9 +15,13 @@ spring:
     password: 123456
     driver-class-name: com.mysql.cj.jdbc.Driver
 
+  # 配置json数据返回的工具类
+  jackson:
+    serialization:
+      FAIL_ON_EMPTY_BEANS: false
+
 # 配置 Mybatis-plus
 mybatis-plus:
   type-aliases-package: com.edu.project.bean
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
-

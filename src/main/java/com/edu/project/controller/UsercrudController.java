@@ -1,7 +1,9 @@
 package com.edu.project.controller;
 
 import com.edu.project.bean.User;
+import com.edu.project.dto.UserDTO;
 import com.edu.project.service.UserService;
+import com.edu.project.util.ApiResponse;
 import com.edu.project.util.beanutil.UserUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -12,7 +14,9 @@ import javax.servlet.http.HttpServletRequest;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 
+@CrossOrigin //跨域请求
 @RestController
 @RequestMapping("/users")
 public class UsercrudController {

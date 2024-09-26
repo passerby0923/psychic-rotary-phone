@@ -14,6 +14,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+@CrossOrigin //跨域请求
 @Controller
 @RequestMapping("/employees")
 public class EmployeeController {
