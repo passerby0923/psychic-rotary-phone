@@ -4,29 +4,267 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="052970e6-d4b8-4ab8-89df-91799de6f8a1" name="Changes" comment="vue create front">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/view/front/.browserslistrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/view/front/.eslintrc.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/view/front/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/view/front/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/view/front/babel.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/view/front/jsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/view/front/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/view/front/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/view/front/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/view/front/public/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/view/front/src/App.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/view/front/src/assets/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/view/front/src/components/HelloWorld.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/view/front/src/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/view/front/src/router/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/view/front/src/store/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/view/front/src/views/AboutView.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/view/front/src/views/HomeView.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/view/front/vue.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/view/front/yarn.lock" afterDir="false" />
+    <list default="true" id="052970e6-d4b8-4ab8-89df-91799de6f8a1" name="Changes" comment="arco">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/.arco-cli/after-init.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/.arco-cli/init.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/.github/ISSUE_TEMPLATE/config.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/.github/PULL_REQUEST_TEMPLATE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/.husky/commit-msg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/.husky/pre-commit" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/.npmignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/.prettierrc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/CODE_OF_CONDUCT.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/README.zh-CN.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/.env.development" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/.env.production" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/.eslintignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/.eslintrc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/.husky/commit-msg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/.husky/pre-commit" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/.prettierignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/.prettierrc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/.stylelintrc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/babel.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/commitlint.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/components.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/config/plugin/arcoResolver.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/config/plugin/arcoStyleImport.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/config/plugin/compress.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/config/plugin/imagemin.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/config/plugin/visualizer.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/config/utils/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/config/vite.config.base.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/config/vite.config.dev.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/config/vite.config.prod.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/pnpm-lock.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/App.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/api/dashboard.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/api/form.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/api/interceptor.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/api/list.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/api/message.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/api/profile.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/api/user-center.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/api/user.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/api/visualization.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/assets/images/login-banner.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/assets/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/assets/style/breakpoint.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/assets/style/global.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/assets/world.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/components/breadcrumb/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/components/chart/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/components/footer/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/components/global-setting/block.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/components/global-setting/form-wrapper.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/components/global-setting/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/components/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/components/menu/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/components/menu/use-menu-tree.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/components/message-box/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/components/message-box/list.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/components/message-box/locale/en-US.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/components/message-box/locale/zh-CN.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/components/navbar/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/components/tab-bar/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/components/tab-bar/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/components/tab-bar/tab-item.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/config/settings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/directive/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/directive/permission/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/env.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/hooks/chart-option.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/hooks/loading.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/hooks/locale.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/hooks/permission.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/hooks/request.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/hooks/responsive.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/hooks/themes.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/hooks/user.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/hooks/visible.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/layout/default-layout.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/layout/page-layout.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/locale/en-US.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/locale/en-US/settings.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/locale/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/locale/zh-CN.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/locale/zh-CN/settings.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/main.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/mock/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/mock/message-box.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/mock/user.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/router/app-menus/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/router/constants.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/router/guard/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/router/guard/permission.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/router/guard/userLoginInfo.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/router/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/router/routes/base.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/router/routes/externalModules/arco.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/router/routes/externalModules/faq.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/router/routes/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/router/routes/modules/dashboard.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/router/routes/modules/exception.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/router/routes/modules/form.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/router/routes/modules/list.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/router/routes/modules/profile.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/router/routes/modules/result.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/router/routes/modules/user.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/router/routes/modules/visualization.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/router/routes/types.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/router/typings.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/store/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/store/modules/app/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/store/modules/app/types.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/store/modules/tab-bar/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/store/modules/tab-bar/types.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/store/modules/user/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/store/modules/user/types.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/types/echarts.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/types/global.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/types/mock.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/utils/auth.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/utils/env.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/utils/event.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/utils/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/utils/is.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/utils/monitor.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/utils/route-listener.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/utils/setup-mock.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/views/dashboard/monitor/components/chat-item.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/views/dashboard/monitor/components/chat-list.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/views/dashboard/monitor/components/chat-panel.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/views/dashboard/monitor/components/data-statistic-list.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/views/dashboard/monitor/components/data-statistic.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/views/dashboard/monitor/components/quick-operation.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/views/dashboard/monitor/components/studio-information.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/views/dashboard/monitor/components/studio-status.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/views/dashboard/monitor/components/studio.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/views/dashboard/monitor/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/views/dashboard/monitor/locale/en-US.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/views/dashboard/monitor/locale/zh-CN.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/views/dashboard/monitor/mock.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/views/dashboard/workplace/components/announcement.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/views/dashboard/workplace/components/banner.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/views/dashboard/workplace/components/carousel.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/views/dashboard/workplace/components/categories-percent.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/views/dashboard/workplace/components/content-chart.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/views/dashboard/workplace/components/data-panel.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/views/dashboard/workplace/components/docs.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/views/dashboard/workplace/components/popular-content.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/views/dashboard/workplace/components/quick-operation.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/views/dashboard/workplace/components/recently-visited.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/views/dashboard/workplace/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/views/dashboard/workplace/locale/en-US.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/views/dashboard/workplace/locale/zh-CN.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/views/dashboard/workplace/mock.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/views/exception/403/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/views/exception/403/locale/en-US.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/views/exception/403/locale/zh-CN.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/views/exception/404/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/views/exception/404/locale/en-US.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/views/exception/404/locale/zh-CN.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/views/exception/500/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/views/exception/500/locale/en-US.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/views/exception/500/locale/zh-CN.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/views/form/group/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/views/form/group/locale/en-US.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/views/form/group/locale/zh-CN.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/views/form/step/components/base-info.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/views/form/step/components/channel-info.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/views/form/step/components/success.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/views/form/step/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/views/form/step/locale/en-US.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/views/form/step/locale/zh-CN.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/views/form/step/mock.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/views/list/card/components/card-wrap.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/views/list/card/components/quality-inspection.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/views/list/card/components/rules-preset.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/views/list/card/components/the-service.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/views/list/card/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/views/list/card/locale/en-US.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/views/list/card/locale/zh-CN.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/views/list/card/mock.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/views/list/search-table/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/views/list/search-table/locale/en-US.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/views/list/search-table/locale/zh-CN.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/views/list/search-table/mock.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/views/login/components/banner.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/views/login/components/login-form.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/views/login/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/views/login/locale/en-US.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/views/login/locale/zh-CN.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/views/not-found/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/views/profile/basic/components/operation-log.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/views/profile/basic/components/profile-item.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/views/profile/basic/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/views/profile/basic/locale/en-US.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/views/profile/basic/locale/zh-CN.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/views/profile/basic/mock.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/views/redirect/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/views/result/error/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/views/result/error/locale/en-US.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/views/result/error/locale/zh-CN.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/views/result/success/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/views/result/success/locale/en-US.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/views/result/success/locale/zh-CN.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/views/user/info/components/latest-activity.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/views/user/info/components/latest-notification.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/views/user/info/components/my-project.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/views/user/info/components/my-team.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/views/user/info/components/user-info-header.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/views/user/info/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/views/user/info/locale/en-US.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/views/user/info/locale/zh-CN.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/views/user/info/mock.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/views/user/setting/components/basic-information.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/views/user/setting/components/certification-records.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/views/user/setting/components/certification.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/views/user/setting/components/enterprise-certification.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/views/user/setting/components/security-settings.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/views/user/setting/components/user-panel.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/views/user/setting/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/views/user/setting/locale/en-US.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/views/user/setting/locale/zh-CN.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/views/user/setting/mock.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/views/visualization/data-analysis/components/chain-item.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/views/visualization/data-analysis/components/content-period-analysis.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/views/visualization/data-analysis/components/content-publish-ratio.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/views/visualization/data-analysis/components/popular-author.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/views/visualization/data-analysis/components/public-opinion.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/views/visualization/data-analysis/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/views/visualization/data-analysis/locale/en-US.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/views/visualization/data-analysis/locale/zh-CN.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/views/visualization/data-analysis/mock.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/views/visualization/multi-dimension-data-analysis/components/chain-item.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/views/visualization/multi-dimension-data-analysis/components/content-publishing-source.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/views/visualization/multi-dimension-data-analysis/components/content-type-distribution.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/views/visualization/multi-dimension-data-analysis/components/data-chain-growth.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/views/visualization/multi-dimension-data-analysis/components/data-overview.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/views/visualization/multi-dimension-data-analysis/components/user-actions.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/views/visualization/multi-dimension-data-analysis/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/views/visualization/multi-dimension-data-analysis/locale/en-US.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/views/visualization/multi-dimension-data-analysis/locale/zh-CN.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/src/views/visualization/multi-dimension-data-analysis/mock.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/arco-design-pro-vite/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/commitlint.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/docs/changelog.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/docs/changelog.zh-CN.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/pnpm-lock.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/scripts/cra.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/scripts/install.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/scripts/nuxt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/scripts/postpublish.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/scripts/prepublish.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/arco-design-pro-vue-2.7.3/scripts/vite.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/ddd.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,31 +309,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/Raw/桌面/Subdistrictoffice&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;9d27d4677fffb781bf64b05a35367e0b&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/codes/Godspeed/2024-09-25/street/src/main/resources/view",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "project.propVCSSupport.CommitDialog",
+    "spring.configuration.checksum": "9d27d4677fffb781bf64b05a35367e0b",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\codes\Godspeed\2024-09-25\street\src\main\resources\view" />
       <recent name="E:\Raw\桌面\Subdistrictoffice\service\Subdistrictoffice\src\main\java\com\edu\project" />
     </key>
   </component>
@@ -158,6 +397,7 @@
       <workItem from="1727226350010" duration="10955000" />
       <workItem from="1727240457278" duration="6239000" />
       <workItem from="1727266340315" duration="1231000" />
+      <workItem from="1727268093131" duration="3878000" />
     </task>
     <task id="LOCAL-00001" summary="Changes">
       <created>1727173112613</created>
@@ -187,11 +427,21 @@
       <option name="project" value="LOCAL" />
       <updated>1727243380590</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="vue create front">
+      <created>1727268108258</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1727268108258</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="UpdateCopyrightCheckinHandler">
+    <option name="UPDATE_COPYRIGHT" value="true" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -205,6 +455,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <ignored-roots>
       <path value="$PROJECT_DIR$/../.." />
@@ -213,7 +464,8 @@
     <MESSAGE value="Changes" />
     <MESSAGE value="首次创建" />
     <MESSAGE value="vue create front" />
-    <option name="LAST_COMMIT_MESSAGE" value="vue create front" />
+    <MESSAGE value="arco" />
+    <option name="LAST_COMMIT_MESSAGE" value="arco" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
