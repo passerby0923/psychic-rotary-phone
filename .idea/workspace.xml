@@ -4,16 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="052970e6-d4b8-4ab8-89df-91799de6f8a1" name="Changes" comment="添加了房屋信息管理">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/edu/project/dto/UserDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/edu/project/util/ApiResponse.java" afterDir="false" />
+    <list default="true" id="052970e6-d4b8-4ab8-89df-91799de6f8a1" name="Changes" comment="添加了登录前端页面和用户信息">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/project/controller/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/project/controller/EmployeeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/project/controller/HouseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/project/controller/HouseController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/project/controller/ResidentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/project/controller/ResidentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/project/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/project/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/project/controller/UsercrudController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/project/controller/UsercrudController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/project/bean/Announcement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/project/bean/Announcement.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
