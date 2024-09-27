@@ -47,7 +47,7 @@ public class ResidentController {
 	}
 
 	// 根据身份证号获取居民
-	@GetMapping("/{idCard}")
+	@GetMapping("/updata/{idCard}")
 	@ResponseBody
 	public ResponseEntity<Map<String, Object>> getResidentByIdCard(@PathVariable String idCard) {
 		Resident resident = residentService.findByIdCard(idCard);
@@ -81,9 +81,9 @@ public class ResidentController {
 	}
 
 	// 删除居民
-	@PostMapping("/deleteByIdCard")
+	@DeleteMapping("/delete/{idCard}")
 	@ResponseBody
-	public ResponseEntity<Map<String, String>> deleteResident(@RequestParam String idCard) {
+	public ResponseEntity<Map<String, String>> deleteResident(@PathVariable String idCard) {
 		boolean isDelResident = residentService.deleteByIdCard(idCard);
 		Map<String, String> response = new HashMap<>();
 		if (isDelResident) {

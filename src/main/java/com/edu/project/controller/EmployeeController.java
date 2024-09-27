@@ -48,7 +48,7 @@ public class EmployeeController {
 
 
 	// 获取单个员工
-	@GetMapping("/{name}")
+	@GetMapping("/updata/{name}")
 	@ResponseBody // 返回值自动转换为 JSON
 	public ResponseEntity<Map<String, Object>> getEmployeeByName(@PathVariable String name) {
 		Employee employee = employeeService.getEmployeeByName(name);
@@ -82,9 +82,9 @@ public class EmployeeController {
 	}
 
 	// 删除员工
-	@PostMapping("/deleteByPhone")
+	@DeleteMapping("/delete/{phone}")
 	@ResponseBody
-	public ResponseEntity<Map<String, String>> deleteEmployee(@RequestParam String phone) {
+	public ResponseEntity<Map<String, String>> deleteEmployee(@PathVariable String phone) {
 		boolean isDeleted = employeeService.deleteEmployeeByPhone(phone);
 		Map<String, String> response = new HashMap<>();
 		if (isDeleted) {

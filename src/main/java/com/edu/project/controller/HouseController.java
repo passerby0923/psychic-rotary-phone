@@ -76,9 +76,9 @@ public class HouseController {
 	}
 
 	// 根据业主名删除房屋
-	@PostMapping("/deleteByOwnerName")
+	@DeleteMapping("/delete/{ownerName}")
 	@ResponseBody
-	public ResponseEntity<Map<String, String>> deleteHouse(@RequestParam String ownerName) {
+	public ResponseEntity<Map<String, String>> deleteHouse(@PathVariable String ownerName) {
 		boolean isDelHouse = houseService.deleteByOwnerName(ownerName);
 		Map<String, String> response = new HashMap<>();
 		if (isDelHouse) {

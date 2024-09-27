@@ -50,7 +50,7 @@ public class UsercrudController {
 
 
 	// 根据用户名获取用户
-	@GetMapping("/{username}")
+	@GetMapping("/updata/{username}")
 	@ResponseBody // 返回值自动转换为 JSON
 	public ResponseEntity<Map<String, Object>> getUserByUsername(@PathVariable String username) {
 		User user = userService.findByUsername(username);
@@ -87,9 +87,9 @@ public class UsercrudController {
 
 
 	// 删除用户
-	@PostMapping("/deleteByUsername")
+	@DeleteMapping("/delete/{username}")
 	@ResponseBody
-	public ResponseEntity<Map<String, String>> deleteUser(@RequestParam String username) {
+	public ResponseEntity<Map<String, String>> deleteUser(@PathVariable String username) {
 		boolean isDeluser = userService.deleteUseByUsername(username);
 		Map<String, String> response = new HashMap<>();
 		if (isDeluser) {

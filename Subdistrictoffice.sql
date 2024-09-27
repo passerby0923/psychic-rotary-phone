@@ -55,25 +55,30 @@ CREATE TABLE announcement (
 
 -- 留言表：居民可在线留言，管理员查看并回复
 CREATE TABLE message (
-    message_id INT PRIMARY KEY AUTO_INCREMENT,      -- 留言ID，主键
-    resident_id INT,                                -- 居民ID，外键
-    content TEXT NOT NULL,                          -- 留言内容
-    create_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP,-- 留言时间
-    reply TEXT,                                     -- 回复内容
-    reply_time TIMESTAMP,                           -- 回复时间
-    FOREIGN KEY (resident_id) REFERENCES resident(resident_id)
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,         -- 留言ID，主键
+    nick_name VARCHAR(255) NOT NULL,              -- 昵称
+    ip VARCHAR(255),                               -- IP地址
+    content TEXT NOT NULL,                         -- 留言内容
+    create_time DATETIME DEFAULT CURRENT_TIMESTAMP, -- 创建时间
+    replied BIT DEFAULT 0,                         -- 是否回复
+    reply_name VARCHAR(255),                       -- 回复人昵称
+    reply_content TEXT,                            -- 回复内容
+    reply_time DATETIME,                           -- 回复时间
+    enabled BIT DEFAULT 1                          -- 是否启用
 );
 
+
+
 -- 用户表：用于管理系统登录用户，区分管理员和普通居民角色
-CREATE TABLE user (
-    user_id INT PRIMARY KEY AUTO_INCREMENT,           -- 用户ID，主键
-    username VARCHAR(50) NOT NULL UNIQUE,             -- 用户名，唯一
-    password VARCHAR(100) NOT NULL,                   -- 密码
-    role VARCHAR(20) NOT NULL CHECK (role IN ('admin', 'resident', 'super_admin')),  -- 角色：'admin' 表示管理员, 'resident' 表示居民用户, 'super_admin' 表示超级管理员
-    resident_id INT DEFAULT NULL,                     -- 对应的居民ID（如果角色是居民），允许为空
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,   -- 创建时间
-    FOREIGN KEY (resident_id) REFERENCES resident(resident_id)  -- 关联居民表
-);
+    CREATE TABLE user (
+        user_id INT PRIMARY KEY AUTO_INCREMENT,           -- 用户ID，主键
+        username VARCHAR(50) NOT NULL UNIQUE,             -- 用户名，唯一
+        password VARCHAR(100) NOT NULL,                   -- 密码
+        role VARCHAR(20) NOT NULL CHECK (role IN ('admin', 'resident', 'super_admin')),  -- 角色：'admin' 表示管理员, 'resident' 表示居民用户, 'super_admin' 表示超级管理员
+        resident_id INT DEFAULT NULL,                     -- 对应的居民ID（如果角色是居民），允许为空
+        created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,   -- 创建时间
+        FOREIGN KEY (resident_id) REFERENCES resident(resident_id)  -- 关联居民表
+    );
 
 -- 插入管理员用户
 INSERT INTO user (username, password, role)

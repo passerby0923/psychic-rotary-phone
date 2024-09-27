@@ -4,12 +4,16 @@ import com.edu.project.bean.Announcement;
 import com.edu.project.service.AnnouncementService;
 import com.edu.project.util.beanutil.AnnouncementUtil;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.propertyeditors.CustomDateEditor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.ServletRequestDataBinder;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -49,14 +53,14 @@ public class AnnouncementController {
 
 
 	// 获取单个公告
-	@GetMapping("/{title}")
+	@GetMapping("/updata/{title}")
 	@ResponseBody // 返回值自动转换为 JSON
 	public ResponseEntity<Map<String, Object>> getAnnouncementById(@PathVariable String title) {
-		Announcement announcement = announcementService.getBytitle(title);
+		List<Announcement> announcements = announcementService.getBytitle(title);
 		Map<String, Object> response = new HashMap<>();
-		if (announcement != null) {
+		if (!announcements.isEmpty()) {
 			response.put("message", "查询成功");
-			response.put("announcement", announcement); // 将查询到的公告信息返回
+			response.put("announcements", announcements); // 将查询到的公告列表返回
 			return ResponseEntity.ok(response);
 		} else {
 			response.put("message", "未找到该公告");
@@ -64,38 +68,46 @@ public class AnnouncementController {
 		}
 	}
 
-	// 更新公告信息
-//	@PostMapping("/update")
-//	@ResponseBody
-//	public ResponseEntity<Map<String, String>> updateAnnouncement(@PathVariable String title, HttpServletRequest request) {
-//		Announcement updatedAnnouncement = AnnouncementUtil.fromRequest(request);
-//		boolean isUpdated = announcementService.updateBytitle(title, updatedAnnouncement);
-//		Map<String, String> response = new HashMap<>();
-//		if (isUpdated) {
-//			response.put("status", "success");
-//			response.put("message", "更新成功");
-//			return ResponseEntity.ok(response);
-//		} else {
-//			response.put("status", "error");
-//			response.put("message", "更新失败");
-//			return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(response);
-//		}
-//	}
 
-	// 删除公告
-//	@DeleteMapping("/delete/{id}")
-//	@ResponseBody
-//	public ResponseEntity<Map<String, String>> deleteAnnouncement(@PathVariable String title) {
-//		boolean isDeleted = announcementService.removeBytitle(title);
-//		Map<String, String> response = new HashMap<>();
-//		if (isDeleted) {
-//			response.put("status", "success");
-//			response.put("message", "删除成功");
-//			return ResponseEntity.ok(response);
-//		} else {
-//			response.put("status", "error");
-//			response.put("message", "删除失败");
-//			return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(response);
-//		}
-//	}
+	// 更新公告信息
+	@PostMapping("/update")
+	@ResponseBody
+//	public ResponseEntity updateAnnouncement(@RequestBody Announcement announcement) {
+	public ResponseEntity updateAnnouncement(Announcement announcement) {
+//		Announcement updatedAnnouncement = AnnouncementUtil.fromRequest(request);
+		boolean isUpdated = announcementService.updateBytitle(announcement);
+		Map<String, String> response = new HashMap<>();
+		if (isUpdated) {
+			response.put("status", "success");
+			response.put("message", "更新成功");
+			return ResponseEntity.ok(response);
+		} else {
+			response.put("status", "error");
+			response.put("message", "更新失败");
+			return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(response);
+		}
+	}
+	@InitBinder
+	protected void init(HttpServletRequest request, ServletRequestDataBinder binder) {
+		SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+		dateFormat.setLenient(false);
+		binder.registerCustomEditor(Date.class, new CustomDateEditor(dateFormat, false));
+	}
+
+	//删除公告
+	@DeleteMapping("/delete/{title}")
+	@ResponseBody
+	public ResponseEntity<Map<String, String>> deleteAnnouncement(@PathVariable String title) {
+		boolean isDeleted = announcementService.removeBytitle(title);
+		Map<String, String> response = new HashMap<>();
+		if (isDeleted) {
+			response.put("status", "success");
+			response.put("message", "删除成功");
+			return ResponseEntity.ok(response);
+		} else {
+			response.put("status", "error");
+			response.put("message", "删除失败");
+			return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(response);
+		}
+	}
 }
