@@ -58,7 +58,7 @@
                         <el-breadcrumb-item>活动列表</el-breadcrumb-item>
                         <el-breadcrumb-item>活动详情</el-breadcrumb-item>
                     </el-breadcrumb>
-                    
+
                     <div style="flex: 1; width: 0; display: flex; align-items: center; justify-content: flex-end;">
                         <el-button icon="el-icon-full-screen" @click="toggleFullScreen" circle style="background-color: transparent; color: white; margin-right: 10px;"></el-button>
                         <i class="el-icon-guanping"></i>
@@ -120,7 +120,7 @@ export default {
             isCollapse: false,
 
             // 主体区域
-            input: '', 
+            input: '',
             userData: [],
             currentPage: 1,
             pageSize: 12

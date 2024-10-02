@@ -18,7 +18,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-@CrossOrigin // 跨域请求
+@CrossOrigin(origins = "http://localhost:8080") // 指定前端的源
 @Controller
 @RequestMapping("/announcements")
 public class AnnouncementController {
@@ -26,11 +26,14 @@ public class AnnouncementController {
 	@Autowired
 	private AnnouncementService announcementService;
 
-	// 创建公告
+	/**
+	 * 创建公告
+	 * @param announcement
+	 * @return
+	 */
 	@PostMapping("/add")
 	@ResponseBody
-	public ResponseEntity<Map<String, String>> addAnnouncement(HttpServletRequest request) {
-		Announcement announcement = AnnouncementUtil.fromRequest(request);
+	public ResponseEntity<Map<String, String>> addAnnouncement(@RequestBody Announcement announcement) {
 		boolean save = announcementService.save(announcement);
 		Map<String, String> response = new HashMap<>();
 		if (save) {
@@ -42,7 +45,11 @@ public class AnnouncementController {
 		}
 	}
 
-	// 获取所有公告
+
+	/**
+	 * 获取所有公告
+	 * @return
+	 */
 	@GetMapping("/list")
 	@ResponseBody
 	public ResponseEntity<List<Announcement>> listAnnouncements() {
@@ -52,8 +59,12 @@ public class AnnouncementController {
 	}
 
 
-	// 获取单个公告
-	@GetMapping("/updata/{title}")
+	/**
+	 * 获取单个公告
+	 * @param title
+	 * @return
+	 */
+	@GetMapping("/query/{title}")
 	@ResponseBody // 返回值自动转换为 JSON
 	public ResponseEntity<Map<String, Object>> getAnnouncementById(@PathVariable String title) {
 		List<Announcement> announcements = announcementService.getBytitle(title);
@@ -69,12 +80,15 @@ public class AnnouncementController {
 	}
 
 
-	// 更新公告信息
+	/**
+	 * 更新公告信息
+	 * @param announcement
+	 * @return
+	 */
+
 	@PostMapping("/update")
 	@ResponseBody
-//	public ResponseEntity updateAnnouncement(@RequestBody Announcement announcement) {
-	public ResponseEntity updateAnnouncement(Announcement announcement) {
-//		Announcement updatedAnnouncement = AnnouncementUtil.fromRequest(request);
+	public ResponseEntity updateAnnouncement(@RequestBody Announcement announcement) {
 		boolean isUpdated = announcementService.updateBytitle(announcement);
 		Map<String, String> response = new HashMap<>();
 		if (isUpdated) {
@@ -94,7 +108,11 @@ public class AnnouncementController {
 		binder.registerCustomEditor(Date.class, new CustomDateEditor(dateFormat, false));
 	}
 
-	//删除公告
+	/**
+	 * 删除公告
+	 * @param title
+	 * @return
+	 */
 	@DeleteMapping("/delete/{title}")
 	@ResponseBody
 	public ResponseEntity<Map<String, String>> deleteAnnouncement(@PathVariable String title) {

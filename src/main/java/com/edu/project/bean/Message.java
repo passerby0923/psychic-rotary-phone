@@ -2,11 +2,9 @@ package com.edu.project.bean;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
-import com.baomidou.mybatisplus.annotation.TableLogic;
 import com.baomidou.mybatisplus.annotation.TableName;
-import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.experimental.SuperBuilder;
@@ -24,18 +22,12 @@ import java.sql.Timestamp;
 @TableName("message")
 public class Message {
 	@TableId(value = "id", type = IdType.AUTO)
-	private Long id;
-	private String nickName;
-	private String ip;
-	private String content;
-	private Timestamp createTime ;
-	@Builder.Default
-	private Boolean replied = false;
-	private String replyName;
-	private String replyContent;
-	private Timestamp replyTime ;
-	@JsonIgnore
-	@Builder.Default
-	@TableLogic
-	private Boolean enabled = true;
+	private Long id;                    // 留言ID
+	private String nickName;            // 昵称
+	private String content;             // 留言内容
+	@JsonFormat(pattern = "yyyy-MM-dd", timezone = "GMT+8")
+	private Timestamp createTime;       // 留言时间
+	private String replyContent;        // 回复内容
+	@JsonFormat(pattern = "yyyy-MM-dd", timezone = "GMT+8")
+	private Timestamp replyTime;        // 回复时间
 }

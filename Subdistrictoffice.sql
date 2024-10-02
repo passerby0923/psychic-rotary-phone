@@ -36,14 +36,14 @@ CREATE TABLE house (
 -- 居民福利申请表：用于管理居民的福利申请
 CREATE TABLE welfare_application (
     application_id INT PRIMARY KEY AUTO_INCREMENT,  -- 申请ID，主键
-    resident_id INT,                                -- 居民ID，外键
+    applicant_name VARCHAR(100),                    -- 申请人姓名
     welfare_type VARCHAR(100),                      -- 福利类型
     apply_date DATE NOT NULL,                       -- 申请日期
     status VARCHAR(50) DEFAULT '申请中',             -- 申请状态（如：申请中，已批准，已拒绝）
     comments TEXT,                                  -- 备注
-    file_path VARCHAR(255),                         -- 文件存储路径
-    FOREIGN KEY (resident_id) REFERENCES resident(resident_id)  -- 关联居民表
+    file_path VARCHAR(255)                          -- 文件存储路径
 );
+
 
 -- 公告表：用于管理街道办的公告信息
 CREATE TABLE announcement (
@@ -55,17 +55,14 @@ CREATE TABLE announcement (
 
 -- 留言表：居民可在线留言，管理员查看并回复
 CREATE TABLE message (
-    id BIGINT AUTO_INCREMENT PRIMARY KEY,         -- 留言ID，主键
-    nick_name VARCHAR(255) NOT NULL,              -- 昵称
-    ip VARCHAR(255),                               -- IP地址
-    content TEXT NOT NULL,                         -- 留言内容
-    create_time DATETIME DEFAULT CURRENT_TIMESTAMP, -- 创建时间
-    replied BIT DEFAULT 0,                         -- 是否回复
-    reply_name VARCHAR(255),                       -- 回复人昵称
-    reply_content TEXT,                            -- 回复内容
-    reply_time DATETIME,                           -- 回复时间
-    enabled BIT DEFAULT 1                          -- 是否启用
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,   -- 留言ID，主键
+    nick_name VARCHAR(255) NULL,            -- 昵称
+    content TEXT NULL,                      -- 留言内容
+    create_time DATETIME NULL,              -- 留言时间
+    reply_content TEXT NULL,                -- 回复内容
+    reply_time DATETIME NULL                -- 回复时间
 );
+
 
 
 

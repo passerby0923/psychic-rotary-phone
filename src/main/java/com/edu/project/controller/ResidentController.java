@@ -22,7 +22,11 @@ public class ResidentController {
 	@Autowired
 	private ResidentService residentService;
 
-	// 创建居民
+	/**
+	 * 创建居民
+	 * @param request
+	 * @return
+	 */
 	@PostMapping("/add")
 	@ResponseBody
 	public ResponseEntity<Map<String, String>> createResident(HttpServletRequest request) {
@@ -38,7 +42,10 @@ public class ResidentController {
 		}
 	}
 
-	// 获取所有居民
+	/**
+	 * 获取所有居民
+	 * @return
+	 */
 	@GetMapping("/list")
 	@ResponseBody
 	public ResponseEntity<List<Resident>> listResidents() {
@@ -46,7 +53,11 @@ public class ResidentController {
 		return ResponseEntity.ok(list); // 返回居民列表的 JSON 数据
 	}
 
-	// 根据身份证号获取居民
+	/**
+	 * 根据身份证号获取居民
+	 * @param idCard
+	 * @return
+	 */
 	@GetMapping("/updata/{idCard}")
 	@ResponseBody
 	public ResponseEntity<Map<String, Object>> getResidentByIdCard(@PathVariable String idCard) {
@@ -62,7 +73,12 @@ public class ResidentController {
 		}
 	}
 
-	// 更新居民信息
+	/**
+	 * 更新居民信息
+	 * @param idCard
+	 * @param request
+	 * @return
+	 */
 	@PostMapping("/updateByIdCard")
 	@ResponseBody
 	public ResponseEntity<Map<String, String>> updateResident(@RequestParam String idCard, HttpServletRequest request) {
@@ -80,7 +96,11 @@ public class ResidentController {
 		}
 	}
 
-	// 删除居民
+	/**
+	 * 删除居民
+	 * @param idCard
+	 * @return
+	 */
 	@DeleteMapping("/delete/{idCard}")
 	@ResponseBody
 	public ResponseEntity<Map<String, String>> deleteResident(@PathVariable String idCard) {

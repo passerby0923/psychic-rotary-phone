@@ -1,6 +1,8 @@
 package com.edu.project.controller;
 
 import com.edu.project.bean.Result;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.ui.Model;
 import com.edu.project.bean.User;
 import com.edu.project.service.UserService;
@@ -21,27 +23,23 @@ public class UserController {
 
 	/**
 	 * 用户注册
-	 * @param username
-	 * @param password
-	 * @param role
+	 * @param user
 	 * @return
 	 */
 	@PostMapping("/register")
-	public String registerUser(@RequestParam String username,
-	                           @RequestParam String password,
-	                           @RequestParam String role) {
-		if (userService.findByUsername(username) != null) {
-			return "用户已存在";
+	@ResponseBody
+	public ResponseEntity<String> registerUser(@RequestBody User user) {
+		// 检查用户是否已存在
+		if (userService.findByUsername(user.getUsername()) != null) {
+			return ResponseEntity.status(HttpStatus.CONFLICT).body("用户已存在");
 		}
-		User newUser = new User();
-		newUser.setUsername(username);
-		newUser.setPassword(password); // 存储明文密码
-		newUser.setRole(role);
-		newUser.setCreatedAt(new Timestamp(System.currentTimeMillis()));
-		userService.registerUser(newUser);
-		return "已添加";
-	}
 
+		// 创建新用户并保存
+		user.setCreatedAt(new Timestamp(System.currentTimeMillis()));
+		userService.registerUser(user);
+
+		return ResponseEntity.status(HttpStatus.CREATED).body("已添加");
+	}
 	/**
 	 * 登录
 	 * @param username

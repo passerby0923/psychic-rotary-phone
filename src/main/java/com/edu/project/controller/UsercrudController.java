@@ -24,7 +24,11 @@ public class UsercrudController {
 	@Autowired
 	private UserService userService;
 
-	// 创建用户
+	/**
+	 * 创建用户
+	 * @param request
+	 * @return
+	 */
 	@PostMapping("/add")
 	@ResponseBody
 	public ResponseEntity<Map<String, String>> createUser(HttpServletRequest request) {
@@ -40,7 +44,10 @@ public class UsercrudController {
 		}
 	}
 
-	// 获取所有用户
+	/**
+	 * 获取所有用户
+	 * @return
+	 */
 	@GetMapping("/list")
 	@ResponseBody
 	public ResponseEntity<List<User>> listUsers() {
@@ -49,7 +56,11 @@ public class UsercrudController {
 	}
 
 
-	// 根据用户名获取用户
+	/**
+	 * 根据用户名获取用户
+	 * @param username
+	 * @return
+	 */
 	@GetMapping("/updata/{username}")
 	@ResponseBody // 返回值自动转换为 JSON
 	public ResponseEntity<Map<String, Object>> getUserByUsername(@PathVariable String username) {
@@ -66,8 +77,12 @@ public class UsercrudController {
 	}
 
 
-
-	// 更新用户信息
+	/**
+	 * 更新用户信息
+	 * @param username
+	 * @param request
+	 * @return
+	 */
 	@PostMapping("/updateByUsername")
 	@ResponseBody
 	public ResponseEntity<Map<String, String>> updateUser(@RequestParam String username, HttpServletRequest request) {
@@ -86,7 +101,11 @@ public class UsercrudController {
 	}
 
 
-	// 删除用户
+	/**
+	 * 删除用户
+	 * @param username
+	 * @return
+	 */
 	@DeleteMapping("/delete/{username}")
 	@ResponseBody
 	public ResponseEntity<Map<String, String>> deleteUser(@PathVariable String username) {

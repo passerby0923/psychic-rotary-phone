@@ -22,7 +22,11 @@ public class HouseController {
 	@Autowired
 	private HouseService houseService;
 
-	// 创建房屋
+	/**
+	 * 创建房屋信息
+	 * @param request
+	 * @return
+	 */
 	@PostMapping("/add")
 	@ResponseBody
 	public ResponseEntity<Map<String, String>> createHouse(HttpServletRequest request) {
@@ -38,7 +42,10 @@ public class HouseController {
 		}
 	}
 
-	// 获取所有房屋
+	/**
+	 * 获取房屋信息
+	 * @return
+	 */
 	@GetMapping("/list")
 	@ResponseBody
 	public ResponseEntity<List<House>> listHouses() {
@@ -46,8 +53,13 @@ public class HouseController {
 		return ResponseEntity.ok(list); // 返回房屋列表的 JSON 数据
 	}
 
-	// 根据业主名字获取房屋
+	/**
+	 * 根据业主名字获取房屋
+	 * @param ownerName
+	 * @return
+	 */
 	@GetMapping("/byname/{ownerName}")
+	@ResponseBody // 返回值自动转换为 JSON
 	public ResponseEntity<House> getHouseByOwnerName(@PathVariable String ownerName) {
 		House house = houseService.findByName(ownerName);
 		if (house != null) {
@@ -57,7 +69,12 @@ public class HouseController {
 		}
 	}
 
-	// 根据业主名更新房屋信息
+	/**
+	 * 根据业主名更新房屋信息
+	 * @param ownerName
+	 * @param request
+	 * @return
+	 */
 	@PostMapping("/updateByOwnerName")
 	@ResponseBody
 	public ResponseEntity<Map<String, String>> updateHouse(@RequestParam String ownerName, HttpServletRequest request) {
@@ -75,7 +92,11 @@ public class HouseController {
 		}
 	}
 
-	// 根据业主名删除房屋
+	/**
+	 * 根据业主名删除房屋
+	 * @param ownerName
+	 * @return
+	 */
 	@DeleteMapping("/delete/{ownerName}")
 	@ResponseBody
 	public ResponseEntity<Map<String, String>> deleteHouse(@PathVariable String ownerName) {

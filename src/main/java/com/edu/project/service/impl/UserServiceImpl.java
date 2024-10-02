@@ -2,12 +2,10 @@ package com.edu.project.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.edu.project.bean.Employee;
 import com.edu.project.bean.User;
 import com.edu.project.dao.UserMapper;
 import com.edu.project.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.core.userdetails.memory.UserAttribute;
 import org.springframework.stereotype.Service;
 
 @Service

@@ -29,4 +29,16 @@ public class User {
 	@TableField("created_at") // 对应数据库中的 created_at 字段
 	@JsonFormat(pattern = "yyyy-MM-dd",timezone = "GMT+8")
 	private Timestamp createdAt; // 创建时间
+
+	@Override
+	public String toString() {
+		return "User{" +
+				"userId=" + userId +
+				", username='" + username + '\'' +
+				", password='" + password + '\'' +
+				", role='" + role + '\'' +
+				", residentId=" + residentId +
+				", createdAt=" + createdAt +
+				'}';
+	}
 }

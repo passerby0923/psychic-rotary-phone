@@ -22,7 +22,11 @@ public class EmployeeController {
 	@Autowired
 	private EmployeeService employeeService;
 
-	// 创建员工
+	/**
+	 * 创建员工
+	 * @param request
+	 * @return
+	 */
 	@PostMapping("/add")
 	@ResponseBody
 	public ResponseEntity<Map<String, String>> addEmployee(HttpServletRequest request) {
@@ -38,7 +42,10 @@ public class EmployeeController {
 		}
 	}
 
-	// 获取所有员工
+	/**
+	 * 获取所有员工
+	 * @return
+	 */
 	@GetMapping("/list")
 	@ResponseBody
 	public ResponseEntity<List<Employee>> listEmployees() {
@@ -46,8 +53,11 @@ public class EmployeeController {
 		return ResponseEntity.ok(list); // 返回员工列表的 JSON 数据
 	}
 
-
-	// 获取单个员工
+	/**
+	 * 获取单个员工
+	 * @param name
+	 * @return
+	 */
 	@GetMapping("/updata/{name}")
 	@ResponseBody // 返回值自动转换为 JSON
 	public ResponseEntity<Map<String, Object>> getEmployeeByName(@PathVariable String name) {
@@ -62,8 +72,12 @@ public class EmployeeController {
 			return ResponseEntity.status(HttpStatus.NOT_FOUND).body(response);
 		}
 	}
-
-	// 更新员工信息
+	/**
+	 * 更新员工信息
+	 * @param phone
+	 * @param request
+	 * @return
+	 */
 	@PostMapping("/updateByPhone")
 	@ResponseBody
 	public ResponseEntity<Map<String, String>> updateEmployee(@RequestParam String phone, HttpServletRequest request) {
@@ -81,7 +95,11 @@ public class EmployeeController {
 		}
 	}
 
-	// 删除员工
+	/**
+	 * 删除员工
+	 * @param phone
+	 * @return
+	 */
 	@DeleteMapping("/delete/{phone}")
 	@ResponseBody
 	public ResponseEntity<Map<String, String>> deleteEmployee(@PathVariable String phone) {
