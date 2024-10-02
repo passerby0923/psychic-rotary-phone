@@ -23,6 +23,12 @@ public class MessageController {
 	@Autowired
 	private MessageService messageService;
 
+	/**
+	 * 留言上传
+	 * @param nickName
+	 * @param content
+	 * @return
+	 */
 	@PostMapping("/createadd")
 	@ResponseBody
 	public String CreateAdd(@RequestParam("nickName") String nickName,
@@ -40,6 +46,12 @@ public class MessageController {
 	}
 
 
+	/**
+	 * 回复上传
+	 * @param nickName
+	 * @param replyContent
+	 * @return
+	 */
 	@PostMapping("/replyadd")
 	@ResponseBody
 	public String replyAdd(@RequestParam("nickName") String nickName,
@@ -81,7 +93,11 @@ public class MessageController {
 		return ResponseEntity.ok(list); // 返回用户列表的 JSON 数据
 	}
 
-	// 根据昵称查询信息
+	/**
+	 * 根据昵称查询信息
+	 * @param nickName
+	 * @return
+	 */
 	@GetMapping("/query/{nickName}")
 	@ResponseBody // 返回值自动转换为 JSON
 	public ResponseEntity<Map<String, Object>> getMessageByNickName(@PathVariable String nickName) {
@@ -98,7 +114,12 @@ public class MessageController {
 			return ResponseEntity.status(HttpStatus.NOT_FOUND).body(response);
 		}
 	}
-	//删除
+
+	/**
+	 * 删除留言信息
+	 * @param nickName
+	 * @return
+	 */
 	@DeleteMapping("/delete/{nickName}")
 	@ResponseBody
 	public ResponseEntity<Map<String, String>> deleteMessage(@PathVariable String nickName) {

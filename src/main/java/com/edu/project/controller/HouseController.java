@@ -14,7 +14,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-@CrossOrigin //跨域请求
+@CrossOrigin
 @Controller
 @RequestMapping("/house")
 public class HouseController {
