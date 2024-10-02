@@ -1,0 +1,146 @@
+<div id="app"></div>
+    <section>
+        <div class="form-group">
+            <label>Username</label>
+            <input v-model='username' type="text" class="form-control" placeholder="用户名">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">密码</label>
+            <input v-model='password' type="password" class="form-control" placeholder="密码">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">重复密码</label>
+            <input v-model='repassword' type="password" class="form-control" placeholder="重复密码">
+        </div>
+        <div class="form-group">
+            <label>昵称</label>
+            <input v-model='nicheng' type="text" class="form-control" placeholder="昵称">
+        </div>
+    </section>
+    <a class="btn btn-default" href='/login'>取消</a>
+    <button @click='regist' type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+      注册
+    </button>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">{{zhuce.title}}</h4>
+                </div>
+                <div class="modal-body">
+                    {{zhuce.result}}
+                </div>
+                <div class="modal-footer">
+                    <a type="button" class="btn btn-default" data-dismiss="modal" v-if='!zhuce.done'>确定</a>
+                    <a class="btn btn-primary" v-if='zhuce.done' href='/login'>立即登录</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<script>
+    var app = new Vue({
+        el: '#app',
+        data: {
+            username: '',
+            password: '',
+            nicheng: '',
+            repassword: '',
+            zhuce: {},
+        },
+        methods: {
+            request(...data) {
+                const datas = [...data][0];
+                let req = {
+                    method: datas.methods || 'POST',
+                    headers: {
+                        "Accept": "application/json",
+                        "Content-Type": "application/x-www-form-urlencoded"
+                    },
+                }
+
+                if (datas.methods !== 'GET') {
+                    console.log(datas.body)
+                    req = Object.assign({}, req, {
+                        body: JSON.stringify(datas.body)
+                    })
+                }
+                return new Promise((resolve, reject) => {
+                    fetch(datas.url, req).then(data => {
+                        data.json().then(dt => resolve(dt), dt => reject(dt))
+                    })
+                })
+            },
+            login() {
+                fetch('login/loginNow', {
+                    method: "POST",
+                    headers: {
+                        "Accept": "application/json",
+                        "Content-Type": "application/x-www-form-urlencoded"
+                    },
+                    body: {
+                        username: this.username,
+                        password: this.password,
+                    }
+                }).then(data => {
+                    data.json().then(dt => {
+                        if (!dt.status) {
+                            location.href = 'index';
+                        } else {
+                            alert(dt.result)
+                        }
+                    })
+                })
+            },
+            regist() {
+                location.href = 'regist';
+            },
+            regist() {
+                let result = '提交中...';
+                let send = false;
+                if (!this.username) {
+                    result = '请填写用户名';
+                } else if (!this.password) {
+                    result = '请填写登录密码';
+                } else if (this.password != this.repassword) {
+                    result = '2次密码不一致';
+                } else if (!this.nicheng) {
+                    result = '请填写昵称';
+                } else {
+                    send = true;
+                }
+                this.zhuce = {
+                    done: false,
+                    result,
+                    title: '温馨提示'
+                }
+                if (!send) return;
+                this.request({
+                    url: 'regist/registNow',
+                    body: {
+                        username: this.username,
+                        password: this.password,
+                        nicheng: this.nicheng,
+                    }
+                }).then(data => {
+                    if (!data.status) {
+                        this.zhuce = Object.assign({}, this.zhuce, {
+                            done: true,
+                            result: '注册成功',
+                        })
+                    } else {
+                        this.zhuce = Object.assign({}, this.zhuce, {
+                            result: data.result,
+                        })
+                    }
+                })
+            }
+        },
+        mounted() {
+            // $('[data-toggle="popover"]').popover()
+        }
+    })
+</script>
