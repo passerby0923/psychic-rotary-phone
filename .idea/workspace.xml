@@ -4,39 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="052970e6-d4b8-4ab8-89df-91799de6f8a1" name="Changes" comment="！！！">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/edu/project/controller/FileController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/edu/project/controller/MessageController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/edu/project/controller/WelfareApplicationController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/edu/project/dao/MessageMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/edu/project/dao/WelfareApplicationMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/edu/project/service/MessageService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/edu/project/service/WelfareApplicationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/edu/project/service/impl/MessageServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/edu/project/service/impl/WelfareApplicationServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/edu/project/util/beanutil/WelfareApplicationUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Subdistrictoffice.sql" beforeDir="false" afterPath="$PROJECT_DIR$/Subdistrictoffice.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/project/bean/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/project/bean/Message.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/project/bean/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/project/bean/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/project/bean/WelfareApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/project/bean/WelfareApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/project/controller/AnnouncementController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/project/controller/AnnouncementController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/project/controller/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/project/controller/EmployeeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/project/controller/HouseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/project/controller/HouseController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/project/controller/ResidentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/project/controller/ResidentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/project/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/project/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/project/controller/UsercrudController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/project/controller/UsercrudController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/project/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/project/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/street_project/src/components/SuperAdmin.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/street_project/src/components/SuperAdmin.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/project/bean/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/project/bean/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/project/bean/WelfareApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/project/bean/WelfareApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/project/controller/AnnouncementController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/project/controller/AnnouncementController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/project/controller/EmployeeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/project/controller/EmployeeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/project/controller/HouseController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/project/controller/HouseController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/project/controller/ResidentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/project/controller/ResidentController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/project/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/project/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/project/controller/UsercrudController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/project/controller/UsercrudController.class" afterDir="false" />
-    </list>
+    <list default="true" id="052970e6-d4b8-4ab8-89df-91799de6f8a1" name="Changes" comment="基本over" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -188,7 +156,7 @@
       <workItem from="1727654995751" duration="89000" />
       <workItem from="1727763618809" duration="176000" />
       <workItem from="1727777682355" duration="1290000" />
-      <workItem from="1727829666892" duration="5488000" />
+      <workItem from="1727829666892" duration="6301000" />
     </task>
     <task id="LOCAL-00001" summary="Changes">
       <created>1727173112613</created>
@@ -246,7 +214,28 @@
       <option name="project" value="LOCAL" />
       <updated>1727422591102</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="基本over">
+      <created>1727835569702</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1727835569702</updated>
+    </task>
+    <task id="LOCAL-00010" summary="基本over">
+      <created>1727835620540</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1727835620540</updated>
+    </task>
+    <task id="LOCAL-00011" summary="基本over">
+      <created>1727835634816</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1727835634816</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -273,7 +262,8 @@
     <MESSAGE value="首次创建" />
     <MESSAGE value="添加了房屋信息管理" />
     <MESSAGE value="！！！" />
-    <option name="LAST_COMMIT_MESSAGE" value="！！！" />
+    <MESSAGE value="基本over" />
+    <option name="LAST_COMMIT_MESSAGE" value="基本over" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
