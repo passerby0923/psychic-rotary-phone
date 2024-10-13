@@ -14,7 +14,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-@CrossOrigin //跨域请求
+@CrossOrigin // 跨域请求
 @Controller
 @RequestMapping("/resident")
 public class ResidentController {
@@ -29,18 +29,19 @@ public class ResidentController {
 	 */
 	@PostMapping("/add")
 	@ResponseBody
-	public ResponseEntity<Map<String, String>> createResident(HttpServletRequest request) {
-		Resident resident = ResidentUtil.fromRequest(request);
-		boolean save = residentService.save(resident);
+	public ResponseEntity<Map<String, String>> createResident(@RequestBody Resident resident) {
 		Map<String, String> response = new HashMap<>();
+		boolean save = residentService.save(resident);
 		if (save) {
 			response.put("message", "居民添加成功");
-			return ResponseEntity.ok(response);
+			return ResponseEntity.status(HttpStatus.CREATED).body(response);
 		} else {
 			response.put("message", "居民添加失败");
 			return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(response);
 		}
 	}
+
+
 
 	/**
 	 * 获取所有居民
@@ -48,9 +49,15 @@ public class ResidentController {
 	 */
 	@GetMapping("/list")
 	@ResponseBody
-	public ResponseEntity<List<Resident>> listResidents() {
+	public ResponseEntity<Map<String, Object>> listResidents() {
 		List<Resident> list = residentService.list(); // 获取所有居民
-		return ResponseEntity.ok(list); // 返回居民列表的 JSON 数据
+
+		Map<String, Object> response = new HashMap<>();
+		response.put("code", 200); // 设置返回状态码
+		response.put("message", "查询成功"); // 设置返回信息
+		response.put("data", list); // 设置返回的数据
+
+		return ResponseEntity.ok(response); // 返回带有状态码的 JSON 数据
 	}
 
 	/**
@@ -64,10 +71,12 @@ public class ResidentController {
 		Resident resident = residentService.findByIdCard(idCard);
 		Map<String, Object> response = new HashMap<>();
 		if (resident != null) {
+			response.put("code", 200); // 状态码 200 表示查询成功
 			response.put("message", "查询成功");
 			response.put("resident", resident); // 将查询到的居民信息返回
 			return ResponseEntity.ok(response);
 		} else {
+			response.put("code", 404); // 状态码 404 表示未找到
 			response.put("message", "未找到该居民");
 			return ResponseEntity.status(HttpStatus.NOT_FOUND).body(response);
 		}
@@ -81,18 +90,18 @@ public class ResidentController {
 	 */
 	@PostMapping("/updateByIdCard")
 	@ResponseBody
-	public ResponseEntity<Map<String, String>> updateResident(@RequestParam String idCard, HttpServletRequest request) {
+	public ResponseEntity<Map<String, Object>> updateResident(@RequestParam String idCard, HttpServletRequest request) {
 		Resident updatedResident = ResidentUtil.fromRequest(request);
 		boolean isUpdated = residentService.updateByIdCard(idCard, updatedResident);
-		Map<String, String> response = new HashMap<>();
+		Map<String, Object> response = new HashMap<>();
 		if (isUpdated) {
-			response.put("status", "success");
+			response.put("code", 200); // 状态码 200 表示更新成功
 			response.put("message", "居民更新成功");
 			return ResponseEntity.ok(response);
 		} else {
-			response.put("status", "error");
+			response.put("code", 400); // 状态码 400 表示请求错误
 			response.put("message", "居民更新失败");
-			return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(response);
+			return ResponseEntity.badRequest().body(response);
 		}
 	}
 
@@ -103,17 +112,17 @@ public class ResidentController {
 	 */
 	@DeleteMapping("/delete/{idCard}")
 	@ResponseBody
-	public ResponseEntity<Map<String, String>> deleteResident(@PathVariable String idCard) {
+	public ResponseEntity<Map<String, Object>> deleteResident(@PathVariable String idCard) {
 		boolean isDelResident = residentService.deleteByIdCard(idCard);
-		Map<String, String> response = new HashMap<>();
+		Map<String, Object> response = new HashMap<>();
 		if (isDelResident) {
-			response.put("status", "success");
+			response.put("code", 200); // 状态码 200 表示删除成功
 			response.put("message", "删除成功");
 			return ResponseEntity.ok(response);
 		} else {
-			response.put("status", "error");
+			response.put("code", 400); // 状态码 400 表示请求错误
 			response.put("message", "删除失败");
-			return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(response);
+			return ResponseEntity.badRequest().body(response);
 		}
 	}
 }

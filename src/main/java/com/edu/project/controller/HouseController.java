@@ -29,18 +29,20 @@ public class HouseController {
 	 */
 	@PostMapping("/add")
 	@ResponseBody
-	public ResponseEntity<Map<String, String>> createHouse(HttpServletRequest request) {
-		House house = HouseUtil.fromRequest(request);
-		boolean save = houseService.save(house);
+	public ResponseEntity<Map<String, String>> createHouse(@RequestBody House house) {
+		boolean save = houseService.save(house); // 保存房屋信息
 		Map<String, String> response = new HashMap<>();
+
 		if (save) {
 			response.put("message", "房屋添加成功");
-			return ResponseEntity.ok(response);
+			return ResponseEntity.ok(response); // 返回状态 200
 		} else {
 			response.put("message", "房屋添加失败");
-			return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(response);
+			return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(response); // 返回状态 400
 		}
 	}
+
+
 
 	/**
 	 * 获取房屋信息
@@ -48,10 +50,19 @@ public class HouseController {
 	 */
 	@GetMapping("/list")
 	@ResponseBody
-	public ResponseEntity<List<House>> listHouses() {
+	public ResponseEntity<Map<String, Object>> listHouses() {
 		List<House> list = houseService.list(); // 获取所有房屋
-		return ResponseEntity.ok(list); // 返回房屋列表的 JSON 数据
+		System.out.println(list);
+
+		// 创建响应体
+		Map<String, Object> response = new HashMap<>();
+		response.put("code", 200); // 添加状态码
+		response.put("message", "查询成功"); // 添加消息
+		response.put("data", list); // 添加房屋列表数据
+
+		return ResponseEntity.ok(response); // 返回包含 code 的响应体
 	}
+
 
 	/**
 	 * 根据业主名字获取房屋

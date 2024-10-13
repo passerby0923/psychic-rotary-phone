@@ -26,23 +26,25 @@ public class UsercrudController {
 
 	/**
 	 * 创建用户
-	 * @param request
 	 * @return
 	 */
 	@PostMapping("/add")
 	@ResponseBody
-	public ResponseEntity<Map<String, String>> createUser(HttpServletRequest request) {
-		User user = UserUtil.fromRequest(request);
+	public ResponseEntity<Map<String, String>> createUser(@RequestBody User user) {
+		// 尝试保存用户信息
 		boolean save = userService.save(user);
+
+		// 创建响应消息
 		Map<String, String> response = new HashMap<>();
 		if (save) {
 			response.put("message", "用户添加成功");
-			return ResponseEntity.ok(response);
+			return ResponseEntity.ok(response); // 返回成功响应
 		} else {
 			response.put("message", "用户添加失败");
-			return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(response);
+			return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(response); // 返回失败响应
 		}
 	}
+
 
 	/**
 	 * 获取所有用户
@@ -50,10 +52,15 @@ public class UsercrudController {
 	 */
 	@GetMapping("/list")
 	@ResponseBody
-	public ResponseEntity<List<User>> listUsers() {
+	public ResponseEntity<Map<String, Object>> listUsers() {
 		List<User> list = userService.list(); // 获取所有用户
-		return ResponseEntity.ok(list); // 返回用户列表的 JSON 数据
+		Map<String, Object> response = new HashMap<>();
+		response.put("code", 200); // 添加状态码，200 表示成功
+		response.put("data", list); // 返回用户列表数据
+
+		return ResponseEntity.ok(response); // 返回封装后的响应数据
 	}
+
 
 
 	/**
@@ -85,9 +92,10 @@ public class UsercrudController {
 	 */
 	@PostMapping("/updateByUsername")
 	@ResponseBody
-	public ResponseEntity<Map<String, String>> updateUser(@RequestParam String username, HttpServletRequest request) {
-		User updatedUser = UserUtil.fromRequest(request);
+	public ResponseEntity<Map<String, String>> updateUser(@RequestBody User updatedUser) {
+		String username = updatedUser.getUsername(); // 从更新的用户对象中获取用户名
 		boolean isUpdated = userService.updateUserByUsername(username, updatedUser);
+
 		Map<String, String> response = new HashMap<>();
 		if (isUpdated) {
 			response.put("status", "success");
@@ -99,7 +107,6 @@ public class UsercrudController {
 			return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(response);
 		}
 	}
-
 
 	/**
 	 * 删除用户

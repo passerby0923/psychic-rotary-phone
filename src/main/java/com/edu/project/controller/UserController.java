@@ -1,19 +1,20 @@
+
 package com.edu.project.controller;
 
 import com.edu.project.bean.Result;
+import com.edu.project.util.JwtUtil;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.ui.Model;
 import com.edu.project.bean.User;
 import com.edu.project.service.UserService;
-import com.edu.project.util.PasswordUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.sql.Timestamp;
+import java.util.HashMap;
 
-
-@CrossOrigin //跨域请求
+@CrossOrigin
 @RestController
 @RequestMapping("/user")
 public class UserController {
@@ -40,8 +41,9 @@ public class UserController {
 
 		return ResponseEntity.status(HttpStatus.CREATED).body("已添加");
 	}
+
 	/**
-	 * 登录
+	 * 用户登录
 	 * @param username
 	 * @param password
 	 * @param model
@@ -54,10 +56,17 @@ public class UserController {
 			model.addAttribute("error", "用户不存在");
 			return Result.fail("用户不存在");
 		}
-		if (!password.equals(user.getPassword())) { // 直接比较明文密码
+		if (!password.equals(user.getPassword())) {
 			model.addAttribute("error", "密码错误");
 			return Result.fail("密码错误");
 		}
-		return Result.success("登录成功", user.getRole());
+		//生成token
+		HashMap<String, Object> claims = new HashMap<>();
+		claims.put("id", user.getUserId());
+		claims.put("username",user.getUsername());
+		String token = JwtUtil.genToken(claims);
+		System.out.println("================2"+token);
+
+		return Result.success(token,"登录成功", user.getRole());
 	}
 }

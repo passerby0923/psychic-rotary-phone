@@ -1,7 +1,6 @@
 package com.edu.project.controller;
 
 import com.edu.project.bean.Message;
-import com.edu.project.bean.User;
 import com.edu.project.service.MessageService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -16,7 +15,7 @@ import java.util.List;
 import java.util.Map;
 
 
-@CrossOrigin //跨域请求
+@CrossOrigin
 @Controller
 @RequestMapping("/message")
 public class MessageController {
@@ -25,14 +24,19 @@ public class MessageController {
 
 	/**
 	 * 留言上传
-	 * @param nickName
-	 * @param content
+	 * @param params
 	 * @return
 	 */
 	@PostMapping("/createadd")
 	@ResponseBody
-	public String CreateAdd(@RequestParam("nickName") String nickName,
-	                     @RequestParam("content") String content){
+	public String CreateAdd(@RequestBody Map<String, String> params) {
+		String nickName = params.get("nickName");
+		String content = params.get("content");
+
+		if (nickName == null || content == null) {
+			return "昵称和留言内容不能为空";
+		}
+
 		Message message = new Message();
 		message.setNickName(nickName);
 		message.setContent(content);
@@ -41,9 +45,10 @@ public class MessageController {
 		if (savecreat) {
 			return "留言上传成功";
 		} else {
-			return "留言上传成功";
+			return "留言上传失败";
 		}
 	}
+
 
 
 	/**

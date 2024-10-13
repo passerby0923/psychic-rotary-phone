@@ -23,16 +23,16 @@ public class EmployeeController {
 	private EmployeeService employeeService;
 
 	/**
-	 * 创建员工
-	 * @param request
+	 * 添加员工
+	 * @param employee
 	 * @return
 	 */
 	@PostMapping("/add")
 	@ResponseBody
-	public ResponseEntity<Map<String, String>> addEmployee(HttpServletRequest request) {
-		Employee employee = EmployeeUtil.fromRequest(request);
+	public ResponseEntity<Map<String, String>> addEmployee(@RequestBody Employee employee) {
 		boolean save = employeeService.save(employee);
 		Map<String, String> response = new HashMap<>();
+
 		if (save) {
 			response.put("message", "用户添加成功");
 			return ResponseEntity.ok(response);
@@ -41,6 +41,7 @@ public class EmployeeController {
 			return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(response);
 		}
 	}
+
 
 	/**
 	 * 获取所有员工
@@ -74,15 +75,15 @@ public class EmployeeController {
 	}
 	/**
 	 * 更新员工信息
-	 * @param phone
-	 * @param request
 	 * @return
 	 */
 	@PostMapping("/updateByPhone")
 	@ResponseBody
-	public ResponseEntity<Map<String, String>> updateEmployee(@RequestParam String phone, HttpServletRequest request) {
-		Employee updatedEmployee = EmployeeUtil.fromRequest(request);
-		boolean isUpdated = employeeService.updateEmployeeByPhone(phone, updatedEmployee);
+	public ResponseEntity<Map<String, String>> updateEmployee(@RequestBody Employee employee) {
+		// 从 Employee 对象中获取 phone 属性
+		String phone = employee.getPhone(); // 确保 Employee 类中有这个字段
+		boolean isUpdated = employeeService.updateEmployeeByPhone(phone, employee);
+
 		Map<String, String> response = new HashMap<>();
 		if (isUpdated) {
 			response.put("status", "success");
@@ -94,6 +95,8 @@ public class EmployeeController {
 			return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(response);
 		}
 	}
+
+
 
 	/**
 	 * 删除员工

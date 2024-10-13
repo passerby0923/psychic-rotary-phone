@@ -134,7 +134,7 @@ public class FileController {
 	}
 
 	/**
-	 * 文件下载路径
+	 * 文件路径
 	 * @param file
 	 * @param fileDir
 	 * @return

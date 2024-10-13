@@ -52,11 +52,23 @@ public class AnnouncementController {
 	 */
 	@GetMapping("/list")
 	@ResponseBody
-	public ResponseEntity<List<Announcement>> listAnnouncements() {
+	public ResponseEntity<Map<String, Object>> listAnnouncements() {
 		List<Announcement> list = announcementService.list();
-		System.out.println("Fetched announcements: " + list);
-		return ResponseEntity.ok(list);
+		Map<String, Object> response = new HashMap<>();
+
+		if (list != null && !list.isEmpty()) {
+			response.put("code", 200); // 状态码，表示成功
+			response.put("message", "获取公告成功");
+			response.put("announcements", list); // 包含公告列表
+		} else {
+			response.put("code", 404); // 状态码，表示未找到公告
+			response.put("message", "没有找到公告");
+			response.put("announcements", List.of()); // 返回空列表
+		}
+
+		return ResponseEntity.ok(response);
 	}
+
 
 
 	/**
