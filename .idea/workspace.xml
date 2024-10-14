@@ -4,73 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="052970e6-d4b8-4ab8-89df-91799de6f8a1" name="Changes" comment="！！！">
+    <list default="true" id="052970e6-d4b8-4ab8-89df-91799de6f8a1" name="Changes" comment="！！！2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/project/ApplicationStartupRunner.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/project/config/CorsConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/project/config/CorsConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/project/config/SpringSecurity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/project/config/WebConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/project/controller/HouseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/project/controller/HouseController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/spring-configuration-metadata.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/project/Application.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/project/ApplicationStartupRunner.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/project/bean/Announcement.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/project/bean/Employee.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/project/bean/House.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/project/bean/Message$MessageBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/project/bean/Message$MessageBuilderImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/project/bean/Message.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/project/bean/Resident.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/project/bean/Result.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/project/bean/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/project/bean/WelfareApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/project/config/CorsConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/project/config/DruidDataSourceConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/project/config/WebConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/project/controller/AnnouncementController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/project/controller/EmployeeController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/project/controller/FileController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/project/controller/HouseController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/project/controller/MessageController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/project/controller/ResidentController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/project/controller/UserController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/project/controller/UsercrudController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/project/controller/WelfareApplicationController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/project/dao/AnnouncementMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/project/dao/EmployeeMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/project/dao/HouseMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/project/dao/MessageMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/project/dao/ResidentMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/project/dao/UserMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/project/dao/WelfareApplicationMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/project/interceptor/JwtInterceptor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/project/service/AnnouncementService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/project/service/EmployeeService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/project/service/HouseService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/project/service/MessageService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/project/service/ResidentService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/project/service/UserService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/project/service/WelfareApplicationService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/project/service/impl/AnnouncementServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/project/service/impl/EmployeeServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/project/service/impl/HouseServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/project/service/impl/MessageServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/project/service/impl/ResidentServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/project/service/impl/UserServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/project/service/impl/WelfareApplicationServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/project/util/ApiResponse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/project/util/EncryptExistingPasswords.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/project/util/JwtUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/project/util/PasswordUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/project/util/beanutil/AnnouncementUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/project/util/beanutil/EmployeeUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/project/util/beanutil/HouseUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/project/util/beanutil/ResidentUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/project/util/beanutil/UserUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/project/util/beanutil/WelfareApplicationUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/UserMapper.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -269,7 +205,7 @@
       <workItem from="1728873469565" duration="219000" />
       <workItem from="1728898532489" duration="2149000" />
       <workItem from="1728902093839" duration="18000" />
-      <workItem from="1728915277511" duration="270000" />
+      <workItem from="1728915277511" duration="866000" />
     </task>
     <task id="LOCAL-00001" summary="Changes">
       <created>1727173112613</created>
@@ -370,7 +306,31 @@
       <option name="project" value="LOCAL" />
       <updated>1728836616969</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="！！！">
+      <option name="closed" value="true" />
+      <created>1728915621819</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1728915621819</updated>
+    </task>
+    <task id="LOCAL-00016" summary="！！！">
+      <option name="closed" value="true" />
+      <created>1728915655630</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1728915655630</updated>
+    </task>
+    <task id="LOCAL-00017" summary="！！！2">
+      <option name="closed" value="true" />
+      <created>1728915674954</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1728915674954</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -398,7 +358,8 @@
     <MESSAGE value="添加了房屋信息管理" />
     <MESSAGE value="基本over" />
     <MESSAGE value="！！！" />
-    <option name="LAST_COMMIT_MESSAGE" value="！！！" />
+    <MESSAGE value="！！！2" />
+    <option name="LAST_COMMIT_MESSAGE" value="！！！2" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
