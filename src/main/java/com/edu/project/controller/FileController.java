@@ -19,6 +19,8 @@ import java.io.File;
 import java.io.IOException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.UUID;
 
 @CrossOrigin // 跨域请求
@@ -92,7 +94,7 @@ public class FileController {
 	 * @return
 	 */
 	@GetMapping("/downloadByApplicant/{applicantName}")
-	public ResponseEntity<Resource> downloadFileByApplicant(@PathVariable String applicantName) {
+	public ResponseEntity<Map<String,String>> downloadFileByApplicant(@PathVariable String applicantName) {
 		log.info("收到下载请求，申请人姓名: {}", applicantName);
 
 		// 根据申请人姓名查询福利申请信息
@@ -122,16 +124,24 @@ public class FileController {
 		Resource resource = new FileSystemResource(file);
 		String contentType = "application/octet-stream"; // 可根据文件类型进行调整
 
+		// 获取文件扩展名
+		String fileName = file.getName();
+		String fileExtension = fileName.contains(".") ? fileName.substring(fileName.lastIndexOf(".")+1) : "";
+		System.out.println("文件扩展名"+fileExtension);
 		// 设置响应头
 		HttpHeaders headers = new HttpHeaders();
-		headers.add(HttpHeaders.CONTENT_DISPOSITION, "attachment; filename=\"" + file.getName() + "\"");
+		headers.add(HttpHeaders.CONTENT_DISPOSITION, "attachment; filename=\"" + fileName + "\"");
+		headers.add("fileExtension", fileExtension); // 添加扩展名信息到响应头
 
-		log.info("文件下载成功，文件名: {}", file.getName());
-		return ResponseEntity.ok()
-				.headers(headers)
-				.contentType(org.springframework.http.MediaType.parseMediaType(contentType))
-				.body(resource);
+		Map<String, String> response = new HashMap<>();
+		response.put("extension", fileExtension);
+		log.info("文件下载成功，文件名: {}", fileName);
+
+		return ResponseEntity.status(HttpStatus.OK).body(response);
+
+
 	}
+
 
 	/**
 	 * 文件路径

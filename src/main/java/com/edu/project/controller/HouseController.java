@@ -24,7 +24,6 @@ public class HouseController {
 
 	/**
 	 * 创建房屋信息
-	 * @param request
 	 * @return
 	 */
 	@PostMapping("/add")
